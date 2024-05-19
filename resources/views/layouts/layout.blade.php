@@ -3,7 +3,7 @@
 
 <head>
     <!-- Page Title -->
-    <title>Car - Insurance</title>
+    <title>- Flight -</title>
 
     <!-- Meta Data -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

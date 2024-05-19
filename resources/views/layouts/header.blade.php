@@ -2,8 +2,8 @@
 <header class="header white-bg fixed-top d-flex align-content-center flex-wrap">
     <!-- Logo -->
     <div class="logo">
-        <a href="/dashboard" class="default-logo"><img src="assets/img/logo.png" alt=""></a>
-        <a href="/dashboard" class="mobile-logo"><img src="assets/img/mobile-logo.png" alt=""></a>
+        <a href="/dashboard" class="default-logo"><img src="assets/img/logo01.jpg" alt=""></a>
+        <a href="/dashboard" class="mobile-logo"><img src="assets/img/moblogo.jpg" alt=""></a>
     </div>
     <!-- End Logo -->
 

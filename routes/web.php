@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+// ====FLIGHTS====
+Route::get('/add-flight', function () {
+    return view('flight\add-flight');
+});
+
+Route::get('/view-flights', function () {
+    return view('flight\view-flights');
+});
+
+Route::get('/update-flight', function () {
+    return view('flight\update-flight');
+});
+
+
+// ====FLIGHTS====

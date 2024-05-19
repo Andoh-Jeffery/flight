@@ -23,15 +23,15 @@
             </li>
             <li>
                 <a href="#">
-                    <i class="icofont-beard"></i>
-                    <span class="link-title">Drivers</span>
+                    <i class="icofont-airplane"></i>
+                    <span class="link-title">Flights</span>
                 </a>
 
                 <!-- Sub Menu -->
                 <ul class="nav sub-menu">
-                    <li><a href="/add-driver">Add Driver</a></li>
-                    <li><a href="/view-drivers">View Drivers</a></li>
-                    <li><a href="#">Driver History</a></li>
+                    <li><a href="/add-flight">Add Flight</a></li>
+                    <li><a href="/view-flights">View Flights</a></li>
+                    <!-- <li><a href="#">Driver History</a></li> -->
                     <!--<li><a href="pages/ecommerce/product-catelog.html">Products Catalog</a></li>
                     <li><a href="pages/ecommerce/product-details.html">Product Details</a></li>
                     <li><a href="pages/ecommerce/cartlist.html">cart list</a></li> -->
@@ -40,13 +40,13 @@
             </li>
             <li>
                 <a href="#">
-                    <i class="icofont-mail-box"></i>
-                    <span class="link-title">Cars</span>
+                    <i class="icofont-airplane-alt"></i>
+                    <span class="link-title">Aircrafts</span>
                 </a>
                 <!-- Sub Menu -->
                 <ul class="nav sub-menu">
-                    <li><a href="/add-car">Add Car</a></li>
-                    <li><a href="/view-cars">View Cars</a></li>
+                    <li><a href="/add-aircraft">Add Aircraft</a></li>
+                    <li><a href="/view-aircrafts">View Aircrafts</a></li>
                     <!-- <li><a href="pages/apps/email/compose.html">C</a></li> -->
                 </ul>
                 <!-- End Sub Menu -->
@@ -54,14 +54,14 @@
 
             <li>
                 <a href="#">
-                    <i class="icofont-listing-box"></i>
-                    <span class="link-title">Claims</span>
+                    <i class="icofont-people"></i>
+                    <span class="link-title">Passenger</span>
                 </a>
 
                 <!-- Sub Menu -->
                 <ul class="nav sub-menu">
-                    <li><a href="/add-claim">Add Claim</a></li>
-                    <li><a href="/view-claim">View Claims</a></li>
+                    <li><a href="/add-passenger">Add Passenger</a></li>
+                    <li><a href="/view-passengers">View Passengers</a></li>
                     <!-- <li><a href="pages/apps/todolist/task-details.html">details</a></li> -->
                 </ul>
                 <!-- End Sub Menu -->
