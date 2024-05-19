@@ -32,5 +32,16 @@ Route::get('/update-flight', function () {
     return view('flight\update-flight');
 });
 
+// ====END FLIGHTS====
 
-// ====FLIGHTS====
+// ====PASSENGER====
+Route::get('/add-passenger', function () {
+    return view('passenger\add-passenger');
+});
+Route::get('/update-passenger', function () {
+    return view('passenger\update-passenger');
+});
+Route::get('/view-passengers', function () {
+    return view('passenger\view-passengers');
+});
+// ====END FLIGHTS====
