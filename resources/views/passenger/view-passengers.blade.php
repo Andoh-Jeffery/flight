@@ -31,18 +31,23 @@
                                             <th>Last Name</th>
                                             <th>Address</th>
                                             <th>Phone</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-
+                                        @foreach($passengers as $passenger)
                                         <tr>
+                                            <td>{{$passenger->first_name}}</td>
+                                            <td>{{$passenger->last_name}}</td>
+                                            <td>{{$passenger->address}}</td>
+                                            <td>{{$passenger->phone}}</td>
                                             <td>
                                                 <div class="icon" style="padding:20px">
                                                     <a class="material-icons" title="edit"
-                                                        href="/update-flight/">build</a>
+                                                        href="/update-passenger/{{$passenger->id}}">build</a>
                                                 </div>
                                                 <div class="icon">
-                                                    <form action="/delete-flight/" method="POST">
+                                                    <form action="/delete-passenger/{{$passenger->id}}" method="POST">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="material-icons"
@@ -51,7 +56,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-
+                                        @endforeach
                                     </tbody>
                                 </table>
                                 <!-- End Invoice List Table -->

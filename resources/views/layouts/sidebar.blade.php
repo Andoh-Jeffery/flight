@@ -31,6 +31,8 @@
                 <ul class="nav sub-menu">
                     <li><a href="/add-flight">Add Flight</a></li>
                     <li><a href="/view-flights">View Flights</a></li>
+                    <li><a href="/book-flight">Book A Flight</a></li>
+                    <!-- <li><a href="/view-booked-flights">View Booked Flights</a></li> -->
                     <!-- <li><a href="#">Driver History</a></li> -->
                     <!--<li><a href="pages/ecommerce/product-catelog.html">Products Catalog</a></li>
                     <li><a href="pages/ecommerce/product-details.html">Product Details</a></li>

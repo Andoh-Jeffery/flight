@@ -23,20 +23,20 @@
                         <h4 class="font-20 mb-20">Update Flight</h4>
 
                         <!-- Form -->
-                        <form action="/update-driver" method="POST">
+                        <form action="/update-flight/{{$flight->id}}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6">
                                     <!-- Form Group -->
                                     <select name="aircraft_id" id="" class="theme-input-style">
-                                        <option value="#" default>Choose flight serial number</option>
-                                        <option value="" default>
+                                        <option value="#" default>{{$flight->aircraf}}</option>
+                                        <option value="{{$aircraft->id}}" default>{{$aircraft->serial_number}}
                                         </option>
                                     </select>
 
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Flight Number</label>
-                                        <input type="text" class="theme-input-style" placeholder="Enter Flight Number"
+                                        <input type="text" class="theme-input-style" value="{{$flight->flight_num}}"
                                             name="flight_num" required>
                                     </div>
                                     <!-- End Form Group -->
@@ -44,15 +44,15 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Origin</label>
-                                        <input type="text" class="theme-input-style" placeholder="Origin" name="origin"
-                                            required>
+                                        <input type="text" class="theme-input-style" value="{{$flight->origin}}"
+                                            name="origin" required>
                                     </div>
                                     <!-- End Form Group -->
 
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Destination</label>
-                                        <input type="text" class="theme-input-style" placeholder="Destination"
+                                        <input type="text" class="theme-input-style" value="{{$flight->destination}}"
                                             name="destination" required>
                                     </div>
 
@@ -63,22 +63,22 @@
 
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Date</label>
-                                        <input type="date" class="theme-input-style" placeholder="Date" name="date"
-                                            required>
+                                        <input type="date" class="theme-input-style" value="{{$flight->date}}"
+                                            name="date" required>
                                     </div>
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Departure Time</label>
-                                        <input type="Number" class="theme-input-style" placeholder="Departure Time"
-                                            name="dep_time" required>
+                                        <input type="text" class="theme-input-style" value="dep_time" name="dep_time"
+                                            required>
                                     </div>
                                     <!-- End Form Group -->
 
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Arrival Time</label>
-                                        <input type="text" class="theme-input-style" placeholder="Arrival Time"
-                                            name="Arrival Time">
+                                        <input type="text" class="theme-input-style" value="{{$flight->arr_time}}"
+                                            name="arr_time">
                                         <!-- <select name="mstatus" id="" class="theme-input-style" required>
                                             <option value="Yes">Yes</option>
                                             <option value="No">No</option>

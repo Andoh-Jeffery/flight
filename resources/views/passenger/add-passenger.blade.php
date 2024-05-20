@@ -39,7 +39,7 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Last Name</label>
-                                        <input type="number" class="theme-input-style" placeholder="Enter Last Name"
+                                        <input type="text" class="theme-input-style" placeholder="Enter Last Name"
                                             name="last_name" required>
                                     </div>
                                     <!-- End Form Group -->
@@ -47,14 +47,14 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Address</label>
-                                        <input type="Number" class="theme-input-style" placeholder="Address"
+                                        <input type="text" class="theme-input-style" placeholder="Address"
                                             name="address" required>
                                     </div>
 
                                     <!-- End Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Phone</label>
-                                        <input type="phone" class="theme-input-style" placeholder="Phone" name="phone"
+                                        <input type="text" class="theme-input-style" placeholder="Phone" name="phone"
                                             required>
                                     </div>
 

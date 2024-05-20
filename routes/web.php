@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AircraftContrller;
 use App\Http\Controllers\FlightContrller;
 use App\Http\Controllers\PassengerContrller;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,18 +29,22 @@ Route::post('/add-flight',[FlightContrller::class,'store']);
 Route::get('/view-flights',[FlightContrller::class,'show']);
 Route::get('/update-flight/{id}', [FlightContrller::class,'update']);
 Route::post('/update-flight/{id}', [FlightContrller::class,'patch']);
-Route::delete('/delete-flight', [FlightContrller::class,'destroy']);
+Route::delete('/delete-flight/{id}', [FlightContrller::class,'destroy']);
 
 // ====END FLIGHTS====
 
+// ====FLIGHT BOOKING====
+Route::get('/book-flight',[BookingController::class,'index']);
+Route::post('/book-flight',[BookingController::class,'store']);
+// ====END FLIGHT BOOKING====
 // ====PASSENGER====
 
 Route::get('/add-passenger',[PassengerContrller::class,'index']);
 Route::post('/add-passenger',[PassengerContrller::class,'store']);
-Route::get('/view-flights',[PassengerContrller::class,'show']);
+Route::get('/view-passengers',[PassengerContrller::class,'show']);
 Route::get('/update-passenger/{id}', [PassengerContrller::class,'update']);
 Route::post('/update-passenger/{id}', [PassengerContrller::class,'patch']);
-Route::delete('/delete-passenger', [PassengerContrller::class,'destroy']);
+Route::delete('/delete-passenger/{id}', [PassengerContrller::class,'destroy']);
 // ====END FLIGHTS====
 
 // ====AIRCRAFT====

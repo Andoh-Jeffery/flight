@@ -23,7 +23,7 @@
                         <h4 class="font-20 mb-20">Update Passenger</h4>
 
                         <!-- Form -->
-                        <form action="/add-driver" method="POST">
+                        <form action="/update-passenger/{{$passenger->id}}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-2"></div>
@@ -31,7 +31,7 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">First Name</label>
-                                        <input type="text" class="theme-input-style" placeholder="Enter First Name"
+                                        <input type="text" class="theme-input-style" value="{{$passenger->first_name}}"
                                             name="first_name" required>
                                     </div>
                                     <!-- End Form Group -->
@@ -39,7 +39,7 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Last Name</label>
-                                        <input type="number" class="theme-input-style" placeholder="Enter Last Name"
+                                        <input type="text" class="theme-input-style" value="{{$passenger->last_name}}"
                                             name="last_name" required>
                                     </div>
                                     <!-- End Form Group -->
@@ -47,15 +47,15 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Address</label>
-                                        <input type="Number" class="theme-input-style" placeholder="Address"
+                                        <input type="text" class="theme-input-style" value="{{$passenger->address}}"
                                             name="address" required>
                                     </div>
 
                                     <!-- End Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Phone</label>
-                                        <input type="phone" class="theme-input-style" placeholder="Phone" name="phone"
-                                            required>
+                                        <input type="text" class="theme-input-style" value="{{$passenger->phone}}"
+                                            name="phone" required>
                                     </div>
 
                                     <div class="form-row">
