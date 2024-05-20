@@ -47,7 +47,8 @@ class FlightContrller extends Controller
 
     public function update($id){
         $flight=Flight::find($id);
-        return view('flight\update-flight',['flight'=>$flight]);
+        $aircraft=Aircraft::all();
+        return view('flight\update-flight',['flight'=>$flight,'aircraft'=>$aircraft]);
     }
     public function destroy($id){
         Flight::destroy($id);

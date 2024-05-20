@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Passenger;
 
 class PassengerContrller extends Controller
 {
@@ -12,12 +13,12 @@ class PassengerContrller extends Controller
     }
     public function store(){
         $passenger=new Passenger;
-        $passenger->first_name=requrest('first_name');
-        $passenger->last_name=requrest('last_name');
-        $passenger->address=requrest('address');
-        $passenger->phone=requrest('phone');
+        $passenger->first_name=request('first_name');
+        $passenger->last_name=request('last_name');
+        $passenger->address=request('address');
+        $passenger->phone=request('phone');
         $passenger->save();
-        return redirect('passenger\view-passengers');
+        return redirect('view-passengers');
     }
 
     public function show(){
@@ -27,12 +28,12 @@ class PassengerContrller extends Controller
 
     public function patch($id){
         $passenger=Passenger::find($id);
-        $passenger->first_name=requrest('first_name');
-        $passenger->last_name=requrest('last_name');
-        $passenger->address=requrest('address');
-        $passenger->phone=requrest('phone');
+        $passenger->first_name=request('first_name');
+        $passenger->last_name=request('last_name');
+        $passenger->address=request('address');
+        $passenger->phone=request('phone');
         $passenger->update();
-        return redirect('passenger\view-passengers');
+        return redirect('view-passengers');
     }
 
     public function update($id){
@@ -41,6 +42,6 @@ class PassengerContrller extends Controller
     }
     public function destroy($id){
         Passenger::destroy($id);
-        return redirect('passenger\view-passengers');
+        return redirect('view-passengers');
     }
 }
