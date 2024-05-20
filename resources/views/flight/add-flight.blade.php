@@ -23,30 +23,42 @@
                         <h4 class="font-20 mb-20">Add Flight</h4>
 
                         <!-- Form -->
-                        <form action="/add-driver" method="POST">
+                        <form action="/add-flight" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6">
                                     <!-- Form Group -->
                                     <div class="form-group">
+                                        <label class="font-14 bold mb-2">Plane Serial Number</label>
+                                        <select name="aircraft_id" id="" class="theme-input-style">
+                                            <option value="#" default>Choose flight serial number</option>
+                                            @foreach($aircrafts as $aircraft)
+                                            <option value="{{$aircraft->id}}" default>
+                                                {{$aircraft->serial_number}}</option>
+                                            @endforeach
+                                        </select>
+                                        <!-- <input type="text" class="theme-input-style" placeholder="Enter Flight Number"
+                                            name="flight_num" required> -->
+                                    </div>
+                                    <div class="form-group">
                                         <label class="font-14 bold mb-2">Flight Number</label>
                                         <input type="text" class="theme-input-style" placeholder="Enter Flight Number"
-                                            name="flight_num" required>
+                                            name="flight_number" required>
                                     </div>
                                     <!-- End Form Group -->
 
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Origin</label>
-                                        <input type="number" class="theme-input-style" placeholder="Origin"
-                                            name="origin" required>
+                                        <input type="text" class="theme-input-style" placeholder="Origin" name="origin"
+                                            required>
                                     </div>
                                     <!-- End Form Group -->
 
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Destination</label>
-                                        <input type="Number" class="theme-input-style" placeholder="Destination"
+                                        <input type="text" class="theme-input-style" placeholder="Destination"
                                             name="destination" required>
                                     </div>
 
@@ -63,7 +75,7 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Departure Time</label>
-                                        <input type="Number" class="theme-input-style" placeholder="Departure Time"
+                                        <input type="time" class="theme-input-style" placeholder="Departure Time"
                                             name="dep_time" required>
                                     </div>
                                     <!-- End Form Group -->
@@ -71,8 +83,8 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Arrival Time</label>
-                                        <input type="text" class="theme-input-style" placeholder="Arrival Time"
-                                            name="Arrival Time">
+                                        <input type="time" class="theme-input-style" placeholder="Arrival Time"
+                                            name="arr_time">
                                         <!-- <select name="mstatus" id="" class="theme-input-style" required>
                                             <option value="Yes">Yes</option>
                                             <option value="No">No</option>

@@ -23,11 +23,17 @@
                         <h4 class="font-20 mb-20">Update Flight</h4>
 
                         <!-- Form -->
-                        <form action="/add-driver" method="POST">
+                        <form action="/update-driver" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6">
                                     <!-- Form Group -->
+                                    <select name="aircraft_id" id="" class="theme-input-style">
+                                        <option value="#" default>Choose flight serial number</option>
+                                        <option value="" default>
+                                        </option>
+                                    </select>
+
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Flight Number</label>
                                         <input type="text" class="theme-input-style" placeholder="Enter Flight Number"
@@ -38,15 +44,15 @@
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Origin</label>
-                                        <input type="number" class="theme-input-style" placeholder="Origin"
-                                            name="origin" required>
+                                        <input type="text" class="theme-input-style" placeholder="Origin" name="origin"
+                                            required>
                                     </div>
                                     <!-- End Form Group -->
 
                                     <!-- Form Group -->
                                     <div class="form-group">
                                         <label class="font-14 bold mb-2">Destination</label>
-                                        <input type="Number" class="theme-input-style" placeholder="Destination"
+                                        <input type="text" class="theme-input-style" placeholder="Destination"
                                             name="destination" required>
                                     </div>
 
