@@ -20,45 +20,43 @@
                     <div class="col-12">
                         <div class="card mb-30">
                             <div class="card-body pt-30">
-                                <h4 class="font-20 ">Flights</h4>
+                                <h4 class="font-20 ">crews</h4>
                             </div>
                             <div class="table-responsive">
                                 <!-- Invoice List Table -->
                                 <table class="text-nowrap dh-table" id="example" class="display">
                                     <thead class="text_color-bg text-white">
                                         <tr>
-                                            <th>Flight Number</th>
-                                            <th>Origin</th>
-                                            <th>Destination</th>
-                                            <th>Date</th>
-                                            <th>Departure Time</th>
-                                            <th>Arrival Time</th>
+                                            <th>Employee Number</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Address</th>
+                                            <th>Salary</th>
                                             <th>Actions</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($flights as $flight)
+                                        @foreach($crews as $crew)
                                         <tr>
-                                            <td>{{$flight->flight_number}}</td>
-                                            <td>{{$flight->origin}}</td>
-                                            <td>{{$flight->destination}}</td>
-                                            <td>{{$flight->date}}</td>
-                                            <td>{{$flight->dep_time}}</td>
-                                            <td>{{$flight->arr_time}}</td>
+                                            <td>{{$crew->employee_number}}</td>
+                                            <td>{{$crew->first_name}}</td>
+                                            <td>{{$crew->last_name}}</td>
+                                            <td>{{$crew->address}}</td>
+                                            <td>${{$crew->salary}}</td>
                                             <td>
                                                 <div class="icon" style="padding:20px">
-                                                    <a class="material-icons" title="edit"
-                                                        href="/flight-details/{{$flight->id}}">visibility</a>
+                                                    <a class="material-icons" title="view"
+                                                        href="/crew-details/{{$crew->id}}">visibility</a>
                                                 </div>
 
                                                 <div class="icon" style="padding:20px">
                                                     <a class="material-icons" title="edit"
-                                                        href="/update-flight/{{$flight->id}}">edit</a>
+                                                        href="/update-crew/{{$crew->id}}">edit</a>
                                                 </div>
 
                                                 <div class="icon">
-                                                    <form action="/delete-flight/{{$flight->id}}" method="POST">
+                                                    <form action="/delete-crew/{{$crew->id}}" method="POST">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="material-icons"

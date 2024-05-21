@@ -32,7 +32,6 @@
                     <li><a href="/add-flight">Add Flight</a></li>
                     <li><a href="/view-flights">View Flights</a></li>
                     <li><a href="/book-flight">Book A Flight</a></li>
-                    <!-- <li><a href="/view-booked-flights">View Booked Flights</a></li> -->
                     <!-- <li><a href="#">Driver History</a></li> -->
                     <!--<li><a href="pages/ecommerce/product-catelog.html">Products Catalog</a></li>
                     <li><a href="pages/ecommerce/product-details.html">Product Details</a></li>
@@ -49,6 +48,21 @@
                 <ul class="nav sub-menu">
                     <li><a href="/add-aircraft">Add Aircraft</a></li>
                     <li><a href="/view-aircrafts">View Aircrafts</a></li>
+                    <!-- <li><a href="pages/apps/email/compose.html">C</a></li> -->
+                </ul>
+                <!-- End Sub Menu -->
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="icofont-airplane-alt"></i>
+                    <span class="link-title">Crew</span>
+                </a>
+                <!-- Sub Menu -->
+                <ul class="nav sub-menu">
+                    <li><a href="/add-crew">Add Crew</a></li>
+                    <li><a href="/view-crews">view Crew</a></li>
+                    <li><a href="/add-flight-crew">Add Flight Crew</a></li>
                     <!-- <li><a href="pages/apps/email/compose.html">C</a></li> -->
                 </ul>
                 <!-- End Sub Menu -->

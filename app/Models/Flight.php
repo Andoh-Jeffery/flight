@@ -17,6 +17,10 @@ class Flight extends Model
     {
         return $this->belongsToMany(Passenger::class)->withTimestamps();
     }
+    public function Crews()
+    {
+        return $this->belongsToMany(Crew::class)->withTimestamps();
+    }
 
     use HasFactory;
 }

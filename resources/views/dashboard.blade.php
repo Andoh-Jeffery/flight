@@ -27,7 +27,7 @@
                                             <h2>86<sup>%</sup></h2>
                                             <p class="font-14">Increased</p>
                                         </div>
-                                        <h3 class="card-subtitle mb-2">Congratulation!</h3>
+                                        <h3 class="card-subtitle mb-2">Congratulation! {{$flight}}</h3>
                                         <p class="font-16">You've finished all of your tasks for this week.</p>
                                     </div>
                                     <div class="congratulation-img">
@@ -114,7 +114,7 @@
                                 <div class="card mb-30">
                                     <div class="card-body d-flex justify-content-between mb-n72">
                                         <div class="position-relative index-9">
-                                            <h4 class="mb-1">Insurance Analytics</h4>
+                                            <h4 class="mb-1"></h4>
                                             <!-- <p class="font-14">Check out each column for more details</p> -->
                                         </div>
 
@@ -144,10 +144,10 @@
                                 <!-- Card -->
                                 <div class="card mb-30 progress_1">
                                     <div class="card-body">
-                                        <h4 class="progress-title">Drivers</h4>
+                                        <h4 class="progress-title">Flights</h4>
 
                                         <div class="ProgressBar-wrap position-relative mb-4">
-                                            <div class="ProgressBar ProgressBar_1" data-progress="75">
+                                            <div class="ProgressBar ProgressBar_1" data-progress="{{$flight}}">
                                                 <svg class="ProgressBar-contentCircle" viewBox="0 0 200 200">
                                                     <!-- on défini le l'angle et le centre de rotation du cercle -->
                                                     <circle transform="rotate(135, 100, 100)"
@@ -156,7 +156,7 @@
                                                         cx="100" cy="100" r="85" />
                                                 </svg>
                                                 <span class="ProgressBar-percentage--text">
-                                                    Cars
+                                                    Flight
                                                 </span>
                                                 <span
                                                     class="ProgressBar-percentage ProgressBar-percentage--count"></span>
@@ -188,10 +188,10 @@
                                 <!-- Card -->
                                 <div class="card mb-30 progress_2">
                                     <div class="card-body">
-                                        <h4 class="progress-title">Claims</h4>
+                                        <h4 class="progress-title">Aircraft</h4>
 
                                         <div class="ProgressBar-wrap position-relative mb-4">
-                                            <div class="ProgressBar ProgressBar_2" data-progress="35">
+                                            <div class="ProgressBar ProgressBar_2" data-progress="{{$aircraft}}">
                                                 <svg class="ProgressBar-contentCircle" viewBox="0 0 200 200">
                                                     <!-- on défini le l'angle et le centre de rotation du cercle -->
                                                     <circle transform="rotate(135, 100, 100)"
@@ -199,7 +199,7 @@
                                                     <circle transform="rotate(135, 100, 100)" class="ProgressBar-circle"
                                                         cx="100" cy="100" r="85" />
                                                 </svg>
-                                                <span class="ProgressBar-percentage--text">Increase</span>
+                                                <span class="ProgressBar-percentage--text">Aircraft</span>
                                                 <span
                                                     class="ProgressBar-percentage ProgressBar-percentage--count"></span>
                                             </div>
@@ -230,10 +230,10 @@
                                 <!-- Card -->
                                 <div class="card mb-30 progress_3 mr-0">
                                     <div class="card-body">
-                                        <h4 class="progress-title">Cars</h4>
+                                        <h4 class="progress-title">Crew</h4>
 
                                         <div class="ProgressBar-wrap position-relative mb-4">
-                                            <div class="ProgressBar ProgressBar_3" data-progress="70">
+                                            <div class="ProgressBar ProgressBar_3" data-progress="{{$crew}}">
                                                 <svg class="ProgressBar-contentCircle" viewBox="0 0 200 200">
                                                     <!-- on défini le l'angle et le centre de rotation du cercle -->
                                                     <circle transform="rotate(135, 100, 100)"
@@ -242,7 +242,7 @@
                                                     <circle transform="rotate(135, 100, 100)" class="ProgressBar-circle"
                                                         cx="100" cy="100" r="85" stroke-width="20" />
                                                 </svg>
-                                                <span class="ProgressBar-percentage--text"> Increase </span>
+                                                <span class="ProgressBar-percentage--text"> Crew </span>
                                                 <span
                                                     class="ProgressBar-percentage ProgressBar-percentage--count"></span>
                                             </div>

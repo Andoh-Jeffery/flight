@@ -2,8 +2,8 @@
 <header class="header white-bg fixed-top d-flex align-content-center flex-wrap">
     <!-- Logo -->
     <div class="logo">
-        <a href="/dashboard" class="default-logo"><img src="assets/img/logo01.jpg" alt=""></a>
-        <a href="/dashboard" class="mobile-logo"><img src="assets/img/moblogo.jpg" alt=""></a>
+        <a href="/dashboard" class="default-logo"><img src="/assets/img/logo01.jpg" alt=""></a>
+        <a href="/dashboard" class="mobile-logo"><img src="/assets/img/moblogo.jpg" alt=""></a>
     </div>
     <!-- End Logo -->
 
@@ -26,7 +26,7 @@
                                 <div class="user-profile d-xl-flex align-items-center d-none">
                                     <!-- User Avatar -->
                                     <div class="user-avatar">
-                                        <img src="assets/img/avatar/user.png" alt="">
+                                        <img src="/assets/img/avatar/user.png" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -40,7 +40,7 @@
                         <div class="main-header-menu d-block d-lg-none">
                             <div class="header-toogle-menu">
                                 <!-- <i class="icofont-navigation-menu"></i> -->
-                                <img src="assets/img/menu.png" alt="">
+                                <img src="/assets/img/menu.png" alt="">
                             </div>
                         </div>
                         <!-- End Main Header Menu -->
